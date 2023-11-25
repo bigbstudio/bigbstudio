@@ -4,7 +4,7 @@
 // import Footer from 'sections/shared/Footer';
 
 // Import the Prismic client creation method and configuration
-import { createClient } from '../../prismicio';
+// import { createClient } from '../../prismicio';
 import sm from '../../sm.json';
 
 // Home component definition
@@ -19,8 +19,8 @@ const Home = () => {
 export default Home;
 
 // Function to fetch server-side properties
-export async function getServerSideProps() {
-  const client = createClient({ accessToken: sm.token });
+// export async function getServerSideProps() {
+//   const client = createClient({ accessToken: sm.token });
 
-  // FETCH THE DATA FROM THE PRISMIC BY CREATING THE QUERY
-}
+//   // FETCH THE DATA FROM THE PRISMIC BY CREATING THE QUERY
+// }

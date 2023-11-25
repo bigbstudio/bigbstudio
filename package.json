@@ -9,15 +9,13 @@
     "lint": "next lint",
     "slicemachine": "start-slicemachine"
   },
-  "engines" : {
-    "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
-  },
   "dependencies": {
+    "@prismicio/next": "^1.5.0",
+    "@prismicio/react": "^2.7.3",
+    "include-media": "^2.0.0",
+    "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "@bizarro/lyserg": "git+https://bizarro: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@github.com/11th-dimension/lyserg.git",
-    "next": "14.0.3",
     "sass": "^1.59.3"
   },
   "devDependencies": {

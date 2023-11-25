@@ -1,22 +1,18 @@
-import 'styles/index.scss'
+import '../styles/index.scss'
 
 import Head from 'next/head'
-import Lenis from 'utils/scroll'
-import Navigation from 'sections/shared/Navigation'
-import Loader from 'components/Loader'
+// import Navigation from 'sections/shared/Navigation'
+// import Loader from 'components/Loader'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Link from 'next/link'
-import GSAP from 'gsap'
-import Main from 'components/Main'
+import Main from '@/components/Main'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'
-import { repositoryName } from '../../prismicio'
+// import { repositoryName } from '../../prismicio'
 
 const App = ({ Component, pageProps }) => {
   const { events } = useRouter()
-
-  Lenis
 
   useEffect(() => {
     events.on('routeChangeComplete', () => {
@@ -27,7 +23,7 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>
-      <PrismicPreview repositoryName={repositoryName}>
+      <PrismicPreview>
         <Head>
           <title>Studio Oriell</title>
           <meta name="description" content="Studio Oriell" />
@@ -50,8 +46,8 @@ const App = ({ Component, pageProps }) => {
           <meta name="msapplication-TileImage" content="/imgs/meta/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <Navigation />
-        <Loader/>
+        {/* <Navigation /> */}
+        {/* <Loader/> */}
         <Main>
           <Component {...pageProps} />
         </Main>
