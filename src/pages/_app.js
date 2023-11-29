@@ -4,22 +4,35 @@ import Head from 'next/head'
 // import Navigation from 'sections/shared/Navigation'
 // import Loader from 'components/Loader'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Main from '@/components/Main'
 import { PrismicProvider } from '@prismicio/react'
 import { PrismicPreview } from '@prismicio/next'
+// import GSAP from '@bigbstudio/blazer/libraries/gsap'
 // import { repositoryName } from '../../prismicio'
 
 const App = ({ Component, pageProps }) => {
-  const { events } = useRouter()
+    const [gsap, setGsap] = useState(null);
+    const { events } = useRouter();
 
-  useEffect(() => {
-    events.on('routeChangeComplete', () => {
-      GSAP.to('main', { autoAlpha: 1, duration: 0.6 })
-      window.scroll(0, 0)
-    })
-  }, [])
+    useEffect(() => {
+        import('@bigbstudio/blazer/libraries/gsap').then(gsapModule => {
+          setGsap(gsapModule.gsap);
+        });
+    }, []);
+
+    useEffect(() => {
+      if (gsap) {
+        const handleRouteChange = () => {
+          gsap.to('main', { autoAlpha: 1, duration: 0.6 });
+          window.scroll(0, 0);
+        };
+
+        events.on('routeChangeComplete', handleRouteChange);
+        return () => events.off('routeChangeComplete', handleRouteChange);
+      }
+    }, [gsap, events]);
 
   return (
     <PrismicProvider internalLinkComponent={(props) => <Link {...props} />}>

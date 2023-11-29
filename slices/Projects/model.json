@@ -1,0 +1,49 @@
+{
+  "id": "projects",
+  "type": "SharedSlice",
+  "name": "Projects",
+  "description": "Projects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "project_title": {
+          "type": "Text",
+          "config": {
+            "label": "Project Title",
+            "placeholder": ""
+          }
+        },
+        "project_header": {
+          "type": "Text",
+          "config": {
+            "label": "Project Header",
+            "placeholder": ""
+          }
+        },
+        "project_description": {
+          "type": "Text",
+          "config": {
+            "label": "Project Description",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "project_media": {
+          "type": "Image",
+          "config": {
+            "label": "Project Media",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

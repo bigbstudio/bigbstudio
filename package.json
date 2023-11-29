@@ -10,8 +10,13 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@bigbstudio/blazer": "git+https://github.com/bigbstudio/blazer.git",
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/helpers": "^2.3.9",
     "@prismicio/next": "^1.5.0",
     "@prismicio/react": "^2.7.3",
+    "@prismicio/slice-simulator-react": "^0.2.3",
+    "@prismicio/types": "^0.2.8",
     "include-media": "^2.0.0",
     "next": "14.0.3",
     "react": "^18",
@@ -19,7 +24,9 @@
     "sass": "^1.59.3"
   },
   "devDependencies": {
+    "@slicemachine/adapter-next": "^0.3.27",
     "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "eslint-config-next": "14.0.3",
+    "slice-machine-ui": "^1.21.1"
   }
 }
