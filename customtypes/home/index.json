@@ -1,0 +1,164 @@
+{
+  "id": "home",
+  "label": "Home Page",
+  "format": "page",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "header_gallery": {
+        "type": "Group",
+        "config": {
+          "label": "Header Gallery",
+          "fields": {
+            "header_gallery_image": {
+              "type": "Image",
+              "config": {
+                "label": "Header Gallery Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      },
+      "header_label": {
+        "type": "Text",
+        "config": {
+          "label": "Header Label",
+          "placeholder": ""
+        }
+      },
+      "header_label_entries": {
+        "type": "Group",
+        "config": {
+          "label": "Header Label Entries",
+          "fields": {
+            "header_label_entries_text": {
+              "type": "Text",
+              "config": {
+                "label": "Header Label Entries Text",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "footer_description": {
+        "type": "Text",
+        "config": {
+          "label": "Footer Description",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "projects": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    },
+    "About": {
+      "about_description": {
+        "type": "Text",
+        "config": {
+          "label": "About Description",
+          "placeholder": ""
+        }
+      },
+      "about_highlight": {
+        "type": "Text",
+        "config": {
+          "label": "About Highlight",
+          "placeholder": ""
+        }
+      },
+      "about_link_text": {
+        "type": "Text",
+        "config": {
+          "label": "About Link Text",
+          "placeholder": ""
+        }
+      },
+      "about_link": {
+        "type": "Link",
+        "config": {
+          "label": "About Link",
+          "placeholder": "",
+          "select": null
+        }
+      }
+    },
+    "Services": {
+      "services_quote": {
+        "type": "Text",
+        "config": {
+          "label": "Services Quote",
+          "placeholder": ""
+        }
+      },
+      "services_highlight": {
+        "type": "Group",
+        "config": {
+          "label": "Services Highlight",
+          "fields": {
+            "services_highlight_text": {
+              "type": "Text",
+              "config": {
+                "label": "Services Highlight Text",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "services_description": {
+        "type": "Text",
+        "config": {
+          "label": "Services Description",
+          "placeholder": ""
+        }
+      },
+      "services_media": {
+        "type": "Image",
+        "config": {
+          "label": "Services Media",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

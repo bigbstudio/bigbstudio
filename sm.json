@@ -1,7 +1,0 @@
-{
-	"apiEndpoint": "https://bigbstudio.prismic.io/api/v2",
-	"token": "MC5aV05RZ1JBQUFDVUExOEo1.a03vv73vv71577-9Onnvv73vv73vv73vv73vv70x77-977-9dAk2CBwYde-_ve-_vW1Z77-977-9O--_ve-_vQ",
-	"libraries": ["@/slices"],
-	"_latest": "0.7.1",
-	"localSliceSimulatorURL": "http://localhost:3000/slice-simulator"
-}
