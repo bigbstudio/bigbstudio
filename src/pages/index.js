@@ -5,15 +5,15 @@
 
 // Import the Prismic client creation method and configuration
 // import { createClient } from '../../prismicio';
-import sm from '../../sm.json';
+import sm from "../../slicemachine.config.json";
 
 // Home component definition
 const Home = () => {
-  return (
-    <>
-        <h1>HOME PAGE</h1>
-    </>
-  );
+	return (
+		<>
+			<h1>HOME PAGE</h1>
+		</>
+	);
 };
 
 export default Home;
