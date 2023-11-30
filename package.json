@@ -15,7 +15,7 @@
 		"@prismicio/next": "^1.5.0",
 		"@prismicio/react": "^2.7.3",
 		"@prismicio/types": "^0.2.8",
-		"@thebigbstudio/blazer": "git+https://oauth2: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@github.com/bigbstudio/blazer.git",
+		"@thebigbstudio/blazer": "git+https://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@github.com/bigbstudio/blazer.git",
 		"include-media": "^2.0.0",
 		"next": "14.0.3",
 		"react": "^18",
