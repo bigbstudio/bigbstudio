@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }) => {
 	const { events } = useRouter();
 
 	useEffect(() => {
-		import("@thebigbstudio/blazer/libraries/gsap").then((gsapModule) => {
+		import("@bigbstudio/blazer/libraries/gsap").then((gsapModule) => {
 			setGsap(gsapModule.gsap);
 		});
 	}, []);
