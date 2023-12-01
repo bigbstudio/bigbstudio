@@ -10,12 +10,12 @@
 		"slicemachine": "start-slicemachine"
 	},
 	"dependencies": {
+		"@bigbstudio/blazer": "git+https://thebigbstudio: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@github.com/bigbstudio/blazer.git",
 		"@prismicio/client": "^7.3.1",
 		"@prismicio/helpers": "^2.3.9",
 		"@prismicio/next": "^1.5.0",
 		"@prismicio/react": "^2.7.3",
 		"@prismicio/types": "^0.2.8",
-		"@thebigbstudio/blazer": "git+https://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@github.com/bigbstudio/blazer.git",
 		"include-media": "^2.0.0",
 		"next": "14.0.3",
 		"react": "^18",
