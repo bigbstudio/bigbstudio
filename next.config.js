@@ -1,6 +1,9 @@
 module.exports = (phase, { defaultConfig }) => {
     return {
       ...defaultConfig,
+      images: {
+        domains: ['images.unsplash.com', 'images.prismic.io'],
+      },
       webpack: (config) => {
         config.resolve = {
           ...config.resolve,

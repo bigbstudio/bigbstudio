@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://bigbstudio.prismic.io/api/v2",
+  "apiEndpoint": "https://bigbstudio.cdn.prismic.io/api/v2",
   "repositoryName": "bigbstudio",
   "adapter": "@slicemachine/adapter-next",
   "libraries": ["./slices"],
