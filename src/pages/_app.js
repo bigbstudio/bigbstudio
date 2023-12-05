@@ -9,8 +9,7 @@ import Link from "next/link";
 import Main from "@/components/Main";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
-// import GSAP from '@bigbstudio/blazer/libraries/gsap'
-// import { repositoryName } from '../../prismicio'
+import { repositoryName } from '../../prismicio'
 
 const App = ({ Component, pageProps }) => {
 	const [gsap, setGsap] = useState(null);
