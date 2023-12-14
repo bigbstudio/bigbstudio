@@ -10,7 +10,7 @@
 		"slicemachine": "start-slicemachine"
 	},
 	"dependencies": {
-		"@thebigbstudio/blazer": "git+https://whizzbbig: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@github.com/bigbstudio/blazer.git",
+		"@thebigbstudio/blazer": "git+https://whizzbbig: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@github.com/bigbstudio/blazer.git",
 		"@prismicio/client": "^7.3.1",
 		"@prismicio/helpers": "^2.3.9",
 		"@prismicio/next": "^1.5.0",
